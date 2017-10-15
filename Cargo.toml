@@ -4,5 +4,6 @@ version = "0.1.0"
 authors = ["PENGUINLIONG <admin@penguinliong.moe>"]
 repository = "https://github.com/PENGUINLIONG/dlpack.rs.git"
 description = "Rust language binding for DLPack."
+license = "Apache-2.0"
 
 [dependencies]
