@@ -7,13 +7,13 @@ pub type DeviceType = u32;
 pub mod device_type {
     use super::DeviceType;
 
-    const CPU:        DeviceType = 1;
-    const GPU:        DeviceType = 2;
-    const CPU_PINNED: DeviceType = 3;
-    const OPENCL:     DeviceType = 4;
-    const METAL:      DeviceType = 8;
-    const VPI:        DeviceType = 9;
-    const ROCM:       DeviceType = 10;
+    pub const CPU:        DeviceType = 1;
+    pub const GPU:        DeviceType = 2;
+    pub const CPU_PINNED: DeviceType = 3;
+    pub const OPENCL:     DeviceType = 4;
+    pub const METAL:      DeviceType = 8;
+    pub const VPI:        DeviceType = 9;
+    pub const ROCM:       DeviceType = 10;
 }
 
 #[repr(C)]
@@ -23,9 +23,9 @@ pub struct Context {
 }
 
 pub mod data_type_code {
-    const INT: u8 = 0;
-    const UINT: u8 = 1;
-    const FLOAT: u8 = 2;
+    pub const INT: u8 = 0;
+    pub const UINT: u8 = 1;
+    pub const FLOAT: u8 = 2;
 }
 
 #[repr(C)]
