@@ -17,11 +17,13 @@ pub mod device_type {
 }
 
 #[repr(C)]
+#[derive(Clone, Copy)]
 pub struct Context {
     device_type: DeviceType,
     device_id: i32,
 }
 
+pub type DataTypeCode = u8;
 pub mod data_type_code {
     pub const INT: u8 = 0;
     pub const UINT: u8 = 1;
@@ -29,8 +31,9 @@ pub mod data_type_code {
 }
 
 #[repr(C)]
+#[derive(Clone, Copy)]
 pub struct DataType {
-    code: u8,
+    code: DataTypeCode,
     bits: u8,
     lanes: u16,
 }
