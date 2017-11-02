@@ -50,3 +50,10 @@ pub struct Tensor {
     pub strides: *mut i64,
     pub byte_offset: u64,
 }
+
+#[repr(C)]
+pub struct ManagedTensor {
+    pub dl_tensor: Tensor,
+    pub manager_ctx: *mut c_void,
+    pub deleter: extern fn (*mut ManagedTensor),
+}

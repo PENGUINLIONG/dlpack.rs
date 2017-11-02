@@ -1,6 +1,6 @@
 [package]
 name = "dlpack"
-version = "0.1.3"
+version = "0.2.0"
 authors = ["PENGUINLIONG <admin@penguinliong.moe>"]
 repository = "https://github.com/PENGUINLIONG/dlpack.rs.git"
 description = "Rust language binding for DLPack."
